@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ardiem</title>
+</head>
+<body>
+    <header class="encabezado">
+           <div class="logo">
+                <a href="paginas/empresa.html"> <img src="./imagenes/logo.svg"></a>
+           </div>
+
+           <div class="buscador"> <!-- Barra de búsqueda en el medio -->
+              <input type="text" placeholder="Buscar...">
+              <button id="search-button">Buscar</button>
+           </div>
+
+          <nav class="menu">
+                <ul>
+                    <li><a class="boton" href="./index.html">INICIO</a></li>
+                    <li><a class="boton" href="./paginas/empresa.html">EMPRESA</a></li>
+                    <li><a class="boton" href="./paginas/productos.html">PRODUCTOS</a></li>
+                    <li><a class="boton" href="./paginas/soporte.html">SOPORTE</a></li>
+                    <li><a class="boton" href="./index.html#contacto">CONTACTO</a></li> 
+                </ul>
+        </nav>
+    </header>
+
+    <div class="imagen-fondo">
+        <img src="./imagenes/fondo.jpg" alt="Imagen Después del Header">
+    </div>
+
+    <h1 class="cambio-color"><stron>ARDIEM</stron>: La elección inteligente en electrodomésticos</h1>
+
+    <main>
+    <div class="productos__container">
+
+        <div class="productos__item">
+  <a class="productos__link" href="./paginas/productos.html#enlaceheladera">
+    <img src="./imagenes/heladera.png" alt="Heladera Ardiem" class="productos__image">
+    <p class="productos__name">Heladera Ardiem</p>
+  </a>
+</div>
+
+<div class="productos__item">
+  <a class="productos__link" href="./paginas/productos.html#enlaceMicroondas">
+    <img src="./imagenes/microondas.png" alt="Microondas Ardiem" class="productos__image">
+    <p class="productos__name">Microondas Ardiem</p>
+  </a>
+</div>
+
+<div class="productos__item">
+  <a class="productos__link" href="./paginas/productos.html#enlaceCocina">
+    <img src="./imagenes/cocina.png" alt="Cocina Ardiem" class="productos__image">
+    <p class="productos__name">Cocina Ardiem</p>
+  </a>
+</div>
+
+<div class="productos__item">
+  <a class="productos__link" href="./paginas/productos.html#enlaceLavarropas">
+    <img src="./imagenes/lavarropas.png" alt="Lavarropas Ardiem" class="productos__image">
+    <p class="productos__name">Lavarropas Ardiem</p>
+  </a>
+</div>
+
+      </div>
+
+
+      <section class="contenido-parrafo">
+        <h2>PRODUCTOS DE VANGUARDIA</h2><br><br>
+        <p>ARDIEM se enorgullece de ofrecer una amplia gama de electrodomésticos de última generación, diseñados y confeccionados meticulosamente con piezas de alta calidad. Desde lavarropas que hacen la colada más eficiente hasta microondas que simplifican la preparación de alimentos, pasando por heladeras y cocinas que elevan la funcionalidad de su hogar a un nivel completamente nuevo, nuestros productos se destacan por su rendimiento excepcional y su diseño elegante.</p><br>
+        <p>La calidad es el pilar fundamental de ARDIEM. Cada uno de nuestros electrodomésticos es sometido a rigurosas pruebas de calidad para garantizar su durabilidad y rendimiento óptimo. Utilizamos piezas de alta calidad en la fabricación, lo que se traduce en productos que funcionan de manera eficiente durante muchos años.</p><br>
+        <p>En ARDIEM, comprendemos la importancia de un servicio técnico confiable. Por eso, ofrecemos servicio técnico a nivel nacional para atender cualquier necesidad de mantenimiento o reparación. Nuestros técnicos altamente capacitados están listos para ayudarte en cualquier momento y lugar.</p><br>
+        <p>Mantener tus electrodomésticos en óptimas condiciones es una prioridad para nosotros. Por eso, mantenemos un amplio stock de repuestos originales para garantizar que cualquier reparación se realice con piezas de calidad y durabilidad comprobadas.</p>
+      </section>
+    </main>
+
+
+    <h2 class="titulo-contacto" id="contacto">Formulario de Contacto</h2>
+
+    <section class="formulario__contacto">
+        <form method="post" action="procesar_formulario.php">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" name="nombre" placeholder="Ingrese su nombre" required><br>
+
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" name="apellido" placeholder="Ingrese su apellido" required><br>
+
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" name="email" placeholder="Ingrese su e-mail" required><br>
+
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" name="telefono" placeholder="Ingrese su teléfono" required><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea name="mensaje" rows="4" required></textarea><br>
+
+            <button type="reset">Borrar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+        
+        <footer class="contenido__footer">
+          <p class="parrafo__footer">&copy; 2023 ARDIEM SRL. Todos los derechos reservados.</p>
+            
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="imagenes/instagram.png" alt="Instagram">
+            </a>
+        
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="imagenes/in.png" alt="LinkedIn">
+            </a>
+        
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="imagenes/facebook.png" alt="Facebook">
+            </a>
+
+            
+        </footer>
+
+         <!-- Botón de WhatsApp -->
+ <a href="https://wa.me/91127996916" class="whatsapp-btn" target="_blank">
+    <img src="./imagenes/whatsapp.png" alt="WhatsApp">
+</a>   
+<script src="./js/script.js"></script>
+
+</body>
+</html>
